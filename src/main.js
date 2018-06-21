@@ -3,14 +3,18 @@ $().ready(()=>{
    $('#btnInsert').click(insert);
    $('#onlyShow').click(show);
    $('#showTop').click(show_bubble_plus);
+   $('#showBotton').click(show_bubble_minor);
 });
 function insert(){
-    let num = parseInt(prompt("informe o numero a inserir no cu de adenildo:"));
-        bubble.append(num);
-    }
+    let num = parseInt(prompt("informe um número a ser inserido na lista:"));
+    bubble.append(num);
+}
 function show (){
-    $('#saida').append(`<div class="ui label">${bubble.show('</div><div class="ui label">')}`)
-    }
+    $('#saida').append(`<br><div class="ui label">${bubble.show()}'</div>'`);
+}
 function show_bubble_plus (){
-    $('#saida').append(`<div class="ui label">${bubble.bubble_plus('</div><div class="ui label">')}`)
+    $('#saida').append(`<br><div class="ui label">${bubble.bubble_plus()}'</div>'`);
+}
+function show_bubble_minor (){
+    $('#saida').append(`<br><div class="ui label">${bubble.bubble_minor()}'</div>'`);
 }
